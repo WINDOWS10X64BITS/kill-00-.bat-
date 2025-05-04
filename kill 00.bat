@@ -2,7 +2,8 @@
 echo ==========================================================
 echo WARNING: You are about to execute a highly destructive malware.
 echo DO NOT proceed unless you fully understand the consequences.
-echo Close this file and delete it immediately if you received it.
+echo Close this file and delete it immediately in your real pc 
+echo im not responsible for any damages to ur pc
 echo ==========================================================
 pause
 pause
