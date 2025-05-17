@@ -6,7 +6,6 @@ echo Close this file and delete it immediately in your real pc
 echo This script should ask for administrator priveliges. Granting these will render your device useless.
 echo im not responsible for any damages to ur pc
 echo ==========================================================
-powershell -Command "Start-Process '%~f0' -Verb RunAs"
 echo Are you sure?
 pause > NUL
 echo Say goodbye to your device...
